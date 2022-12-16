@@ -12,7 +12,10 @@ import java.util.List;
 import java.util.TreeSet;
 import java.util.stream.Stream;
 
-class Result2 {
+import lombok.extern.log4j.Log4j2;
+
+
+public class Result2 {
 
 	public static int getTotalX(List<Integer> a, List<Integer> b) {
 		
@@ -54,35 +57,5 @@ class Result2 {
 		
 		return answer;
 	} // getTotalX
-}
+} // end class
 
-
-
-public class Solution2 {
-	public static void main(String[] args) throws IOException {
-		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
-
-		String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
-
-		int n = Integer.parseInt(firstMultipleInput[0]);
-
-		int m = Integer.parseInt(firstMultipleInput[1]);
-
-		List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-				.map(Integer::parseInt)
-				.collect(toList());
-
-		List<Integer> brr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-				.map(Integer::parseInt)
-				.collect(toList());
-
-		int total = Result2.getTotalX(arr, brr);
-
-		bufferedWriter.write(String.valueOf(total));
-		bufferedWriter.newLine();
-
-		bufferedReader.close();
-		bufferedWriter.close();
-	}
-}
