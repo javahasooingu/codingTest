@@ -6,6 +6,9 @@ import java.util.Arrays;
 import java.util.List;
 
 class Solution {
+	
+	// 시간복잡도
+	// 
 
 	public static void main(String[] args) {
 
