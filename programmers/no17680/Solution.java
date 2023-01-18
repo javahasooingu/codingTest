@@ -12,7 +12,7 @@ class Solution {
 	int cacheSize = 5;
 	String[] cities = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"};
 	
-	System.out.println(Solution.solution(cacheSize, cities));
+	System.out.println(Solution.solution(cacheSize, cities)); // 52
 
 	} // main
 	
