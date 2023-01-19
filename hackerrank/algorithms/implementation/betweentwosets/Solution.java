@@ -44,7 +44,7 @@ class Result {
         } // for
         
         Integer[] keyArr = bMap.keySet().toArray(new Integer[bMap.keySet().size()]);
-zz        
+   
         int answer = 0;
         
         for(int key : keyArr){
