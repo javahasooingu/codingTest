@@ -10,7 +10,7 @@ public class TestDequeMethod {
 		double e;
 		double t;
 
-		int max = 2_000_000;
+		int max = 10_000;
 		
 		ArrayDeque<Integer> intQ = new ArrayDeque<>();
 
@@ -40,57 +40,57 @@ public class TestDequeMethod {
 		//		System.out.println(intQ);
 		//		REMOVE TEST
 
-		//		s = System.currentTimeMillis();
-		//
-		//		intQ.forEach((i)->{
-		//			System.out.printf("%d_",i);
-		//		});
-		//
-		//		e = System.currentTimeMillis();
-		//
-		//		System.out.println();
-		//
-		//		t = (e - s) / 1000.0;
-		//
-		//		System.out.printf("%f s\n",t);
-		//
-		//		System.out.println(intQ.isEmpty());
-		//
-		//		System.out.println();
-		//
-		//		s = System.currentTimeMillis();
-		//
-		//		for(var i : intQ) {
-		//			System.out.printf("%d_",intQ.pollFirst());
-		//		}
-		//
-		//		e = System.currentTimeMillis();
-		//
-		//		System.out.println();
-		//
-		//		t = (e - s) / 1000.0;
-		//
-		//		System.out.printf("%f s\n",t);
-		//		
-		//
-		//		
-		//		System.out.println(intQ.isEmpty());
-		//
-		//		System.out.println();
-		//
-		//		s = System.currentTimeMillis();
-		//
-		//		while (!intQ.isEmpty()) {
-		//			System.out.printf("%d_",intQ.pollFirst());
-		//		}
-		//
-		//		e = System.currentTimeMillis();
-		//
-		//		System.out.println();
-		//
-		//		t = (e - s) / 1000.0;
-		//
-		//		System.out.printf("%f s\n",t);
+//				s = System.currentTimeMillis();
+//		
+//				intQ.forEach((i)->{
+//					System.out.printf("%d_",i);
+//				});
+//		
+//				e = System.currentTimeMillis();
+//		
+//				System.out.println();
+//		
+//				t = (e - s) / 1000.0;
+//		
+//				System.out.printf("%f s\n",t);
+//		
+//				System.out.println(intQ.isEmpty());
+//		
+//				System.out.println();
+//		
+//				s = System.currentTimeMillis();
+//		
+//				for(var i : intQ) {
+//					System.out.printf("%d_",intQ.pollFirst());
+//				}
+//		
+//				e = System.currentTimeMillis();
+//		
+//				System.out.println();
+//		
+//				t = (e - s) / 1000.0;
+//		
+//				System.out.printf("%f s\n",t);
+//				
+//		
+//				
+//				System.out.println(intQ.isEmpty());
+//		
+//				System.out.println();
+//		
+//				s = System.currentTimeMillis();
+//		
+//				while (!intQ.isEmpty()) {
+//					System.out.printf("%d_",intQ.pollFirst());
+//				}
+//		
+//				e = System.currentTimeMillis();
+//		
+//				System.out.println();
+//		
+//				t = (e - s) / 1000.0;
+//		
+//				System.out.printf("%f s\n",t);
 
 		//		FOREACH FOR TEST
 
@@ -109,6 +109,9 @@ public class TestDequeMethod {
 		e = System.currentTimeMillis();
 		t = (e - s) / 1000.0;
 		System.out.printf("%f s\n",t);
+		
+		
+		
 
 
 	} // main
